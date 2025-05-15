@@ -46,6 +46,38 @@ class CategoryModel {
       ),
     );
 
+    categories.add(
+      CategoryModel(
+        name: 'Salad',
+        iconPath: 'assets/icons/plate.svg',
+        boxColor: Color(0xff92a3FD),
+      ),
+    );
+
+    categories.add(
+      CategoryModel(
+        name: 'Cake',
+        iconPath: 'assets/icons/pancakes.svg',
+        boxColor: Color(0xffC588F2),
+      ),
+    );
+
+    categories.add(
+      CategoryModel(
+        name: 'Pie',
+        iconPath: 'assets/icons/pie.svg',
+        boxColor: Color(0xff92a3FD),
+      ),
+    );
+
+    categories.add(
+      CategoryModel(
+        name: 'Smoothies',
+        iconPath: 'assets/icons/orange-snacks.svg',
+        boxColor: Color(0xffC588F2),
+      ),
+    );
+
     return categories;
   }
 }
