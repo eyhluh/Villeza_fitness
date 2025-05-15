@@ -346,7 +346,7 @@ class _HomePageState extends State<HomePage> {
           BoxShadow(
             color: const Color(0xff1D1617).withOpacity(0.11),
             blurRadius: 40,
-            offset: const Offset(0, 0),
+            spreadRadius: 0.0,
           ),
         ],
       ),
@@ -358,10 +358,11 @@ class _HomePageState extends State<HomePage> {
           hintText: 'Search Pancake',
           hintStyle: TextStyle(color: Color(0xffDDDADA), fontSize: 14),
           prefixIcon: Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(12),
             child: SvgPicture.asset('assets/icons/Search.svg'),
           ),
-          suffixIcon: IntrinsicHeight(
+          suffixIcon: Container(
+            width: 100,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
